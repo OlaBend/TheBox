@@ -1,0 +1,97 @@
+  @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    height: 80px;
+}
+
+a {
+    text-decoration: none; /*znika podkreślenie*/
+    color: inherit;
+    font-size: 20px;
+    font-family: 'Work Sans';
+    color: #14171F;
+}
+
+ul {
+    list-style-type: none; /*znika kropki*/
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.navbar-box {
+    display: flex; 
+    justify-content: space-between; /*przerwa*/
+    align-items: center;
+    padding: 22px 0;
+}
+
+.nav {
+    display: flex;
+    gap: 50px;      /*przerwa*/
+    margin-right: 112px;
+}
+
+.logo-title {
+    font-size: 30px;
+    color: #2947A9;
+    font-family: 'Work Sans';
+    top: 22px;
+    font-style: italic;
+    font-weight: 700;
+    line-height: 35px;
+}
+
+.logo-box {
+    margin-left: 164px;
+}
+
+.contact {
+    color: #F9995D;
+}
+
+.img-box-logo {
+    position: absolute; /* czy to jest potrzebne? */
+    width: 38px;
+    height: 47.5px;
+    top: 16px;
+    left: 112px;
+    
+}
+
+.logo-container {
+    gap: 14px;
+}
+
+@media (max-width: 1300px) {
+    .container {
+        margin: 0 50px;
+    }
+    .logo-box {
+        margin: 0 40px;
+    }
+}
+
+@media (max-width: 992px) {
+    .list-item {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        margin: 0 30px;
+    }
+    .nav {
+        display: none;
+    }
+}
